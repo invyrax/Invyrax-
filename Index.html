@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Invyrax | System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="penalty-overlay"></div>
+
+<header>
+  <div>
+    <div class="logo">INVYRAX</div>
+    <div class="creator">Creator: Zaif</div>
+  </div>
+  <div id="clock">00:00:00</div>
+</header>
+
+<div id="progress-container">
+  <div id="progress-bar"></div>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h3>[ MISSION STATUS ]</h3>
+    <p>Objective: Reach 100% completion before system reset.</p>
+
+    <p>
+      Current Rank:
+      <span class="rank-badge" id="rank">E-RANK</span>
+    </p>
+
+    <p id="penalty-msg">
+      Penalty Status:
+      <span class="no-penalty">NONE</span>
+    </p>
+
+    <hr>
+
+    <small>
+      Warning: Missing daily missions will reset progress..
+    </small>
+  </div>
+
+</div>
+
+<div class="controls">
+  <button onclick="scrollTopSmooth()">▲</button>
+  <button onclick="toggleAutoScroll()" id="autoBtn">▶</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
